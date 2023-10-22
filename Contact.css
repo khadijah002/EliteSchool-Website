@@ -1,0 +1,141 @@
+* { box-sizing: border-box; } 
+body { font-family: Verdana, Arial, sans-serif;
+       background-color: #FFF0F5;
+	   margin: 0;
+}
+#wrapper {  
+           color: #EAEEE9;
+		   background-color: #FFFFFF;
+
+}
+
+header {
+       font-family: Georgia, "Times New Roman", serif;
+       color: #EAEEE9;
+       background-color: #D8B390;
+       background-image: url(logo.png);
+       background-repeat: no-repeat;
+       background-position: 10%; /* Center the background image */
+       margin-top: 0;
+       padding-bottom: 5em;
+       min-height: 120px;
+       height: auto;
+       text-align: center;
+     }
+   
+   header h1 { padding-left: 120px;
+             padding-top: 40px;
+                   margin: 0; 
+             text-align: center;	  
+    }
+
+    h1 { text-align: center;
+    
+    }
+
+
+   header span { font-style: italic;
+                          font-weight: bold;
+                          font-size: 95%;
+                          color: #FFFFFF;
+                          padding-left: 30%;
+   }
+   nav {  background-color: #B09FCA; 
+             letter-spacing: 0.1em;
+             font-weight: bold;
+             text-align: right; 
+             padding-right: 2em;
+   } 
+   nav ul { list-style-type: none; 
+           margin: 0;
+   }
+   
+   nav li { padding: 0.5em;
+         display: inline-block;
+   }
+   nav a { text-decoration: none; 
+          display: block;
+   }
+   nav a:link { color: #FFFFFF; }
+   nav a:visited { color: #C0C0C0; }
+   nav a:hover {  color: #EAC117;}
+   main { background-color: #ffffff;
+              color: #000000;
+                    padding: 10px 20px;
+   
+   } 
+   
+   h2 { color: #000000; 
+        font-family: arial, sans-serif;
+           margin: 50px;
+        text-align: center;
+   }
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #D8B390;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+   
+   footer {font-size:70%;
+      text-align: center;
+      padding: 10px;
+            clear: both;
+}
+
+      header, main, nav, footer, figure, figcaption { display: block; }
+      @media (min-width: 600px) {
+      #wrapper { margin: auto; 
+          width: 80%; }
+       header span { padding-left: 25%; }
+}	

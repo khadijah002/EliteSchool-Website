@@ -1,0 +1,203 @@
+* { box-sizing: border-box; } 
+body { font-family: Verdana, Arial, sans-serif;
+       background-color: #FFF0F5;
+	   margin: 0;
+}
+#wrapper {  
+           color: #EAEEE9;
+		   background-color: #FFFFFF;
+
+}
+
+header {
+       font-family: Georgia, "Times New Roman", serif;
+       color: #EAEEE9;
+       background-color: #D8B390;
+       background-image: url(logo.png);
+       background-repeat: no-repeat;
+       background-position: 10%; /* Center the background image */
+       margin-top: 0;
+       padding-bottom: 5em;
+       min-height: 120px;
+       height: auto;
+       text-align: center;
+     }
+   
+   header h1 { padding-left: 120px;
+             padding-top: 40px;
+                   margin: 0; 
+             text-align: center;	  
+    }
+
+    h1 { text-align: center;
+    
+    }
+
+
+   header span { font-style: italic;
+                          font-weight: bold;
+                          font-size: 95%;
+                          color: #FFFFFF;
+                          padding-left: 30%;
+   }
+   nav {  background-color: #B09FCA; 
+             letter-spacing: 0.1em;
+             font-weight: bold;
+             text-align: right; 
+             padding-right: 2em;
+   } 
+   nav ul { list-style-type: none; 
+           margin: 0;
+   }
+   
+   nav li { padding: 0.5em;
+         display: inline-block;
+   }
+   nav a { text-decoration: none; 
+          display: block;
+   }
+   nav a:link { color: #FFFFFF; }
+   nav a:visited { color: #C0C0C0; }
+   nav a:hover {  color: #EAC117;}
+   main { background-color: #ffffff;
+              color: #000000;
+                    padding: 10px 20px;
+   
+   } 
+   
+   h2 { color: #000000; 
+        font-family: arial, sans-serif;
+           margin: 50px;
+        text-align: center;
+   }
+   
+
+
+   .container {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rules{
+        border: none; /* Remove any potential borders */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+    
+
+
+
+h2 {
+    text-align: center;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  /* Style the textarea for "Remarks" */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 16px; /* Adjust the font size as needed */
+    height: 300px; /* Adjust the height as needed */
+}
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #D8B390;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; 
+  }
+
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+        /* CSS for styling the checkbox grid */
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Three columns */
+            gap: 10px; /* Gap between checkboxes */
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            margin-left: 5px;
+        }
+
+   footer {font-size:70%;
+       text-align: center;
+       padding: 10px;
+             clear: both;
+}
+
+       header, main, nav, footer, figure, figcaption { display: block; }
+       @media (min-width: 600px) {
+       #wrapper { margin: auto; 
+           width: 80%; }
+        header span { padding-left: 25%; }
+}	
